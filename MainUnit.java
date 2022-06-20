@@ -55,23 +55,23 @@ public class MainUnit {
 	
 		System.out.println("Start - Checkbox Test");
 
-	       Checkbox checkbox = new Checkbox();
-     	       checkbox.test(chDriver);
-//	       checkbox.test(ffDriver);
+	        Checkbox checkbox = new Checkbox();
+     	        checkbox.test(chDriver);
+//	        checkbox.test(ffDriver);
 	
-	       System.out.println("Start - Dropdown Test");
+	        System.out.println("Start - Dropdown Test");
 	
-	       Dropdown Dropdown = new Dropdown();
-	       Dropdown.test(chDriver);
-//             Dropdown.test(ffDriver);
+	        Dropdown Dropdown = new Dropdown();
+	        Dropdown.test(chDriver);
+//       	Dropdown.test(ffDriver);
+	    
+		System.out.println("Tests finished");
 }
 	
 	@AfterClass //Closing environment:  
 	public static void afterTest() {
 		
-		//chDriver.close();
+		chDriver.close();
 		//ffDriver.close();
-
 	}
-
 }
