@@ -21,7 +21,7 @@ public class Checkbox {
 		chrome.manage().timeouts().implicitlyWait(50, TimeUnit.SECONDS);	
 //		firefox.manage().timeouts().implicitlyWait(50, TimeUnit.SECONDS);	
 		chrome.findElement(By.id(":2v")).click();
-//      firefox.findElement(By.id(":2v")).click();
+//              firefox.findElement(By.id(":2v")).click();
 		chrome.manage().timeouts().implicitlyWait(50, TimeUnit.SECONDS);	
 //		firefox.manage().timeouts().implicitlyWait(50, TimeUnit.SECONDS);	
 		chrome.findElement(By.id(":39")).click();
