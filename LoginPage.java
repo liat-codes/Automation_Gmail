@@ -32,7 +32,7 @@ public class LoginPage {
 		System.out.println(" ");
 		System.out.println("Start the Login");
 
-		 wait.until(ExpectedConditions.elementToBeClickable(By.id("identifierId")));
+	   	 wait.until(ExpectedConditions.elementToBeClickable(By.id("identifierId")));
 
 	//Filling username by element's id:
 	
