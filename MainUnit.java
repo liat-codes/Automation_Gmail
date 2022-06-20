@@ -69,7 +69,7 @@ public class MainUnit {
 	@AfterClass //Closing environment:  
 	public static void afterTest() {
 		
-		//chDriver.close();
+		chDriver.close();
 		//ffDriver.close();
 
 	}
