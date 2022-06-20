@@ -16,12 +16,11 @@ public class InboxPage {
 	chrome.manage().timeouts().implicitlyWait(50,TimeUnit.SECONDS) ;
 //	firefox.manage().timeouts().implicitlyWait(50,TimeUnit.SECONDS) ;
 	
-	
-
-	// not working
-		int count = 0;
+		 int count = 0;
 		 int expectedLinks = 31;
-		 List<WebElement> link = driver.findElement(By.tagName("a"));
+		 List<WebElement> link = chrome.findElements(By.tagName("a"));
+//		 List<WebElement> link = firefox.findElements(By.tagName("a"));
+
 		 System.out.println(link.size()); // this will print the number of links in a page.	
 		 count =  link.size();
 		 {
@@ -38,6 +37,7 @@ public class InboxPage {
 //		 personalArea(firefox);	 
 	}
 	}
+	
 	static void personalArea(WebDriver chrome) {
 //	static void personalArea(WebDriver firefox) {
 	chrome.manage().timeouts().implicitlyWait(50,TimeUnit.SECONDS) ;
